@@ -13,4 +13,4 @@ def testBaking():
     # Call the method to end the baking process and expect to see "Baking has finished..."
     bakery.endBaking()
 
-    assert bakery.itemsBaked() == 1
+    assert bakery.itemsBaked() == 2
