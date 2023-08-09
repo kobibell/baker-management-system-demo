@@ -1,14 +1,14 @@
-# Define the class for our bakery
 class Bakery:
     def __init__(self):
-        self.items_baked = 0
+        self.itemsBaked = 0
 
     def startBaking(self):
         print("Baking has started...")
 
-    def bakedItems(self):
-        self.items_baked = self.items_baked + 1
+    def bakeItems(self):
+        itemsBaked += 1
+        print("Baking items...")
 
     def endBaking(self):
-        print("Baked has ended...")
-        print("Total numbers of items baked: %d" % self.items_baked)
+        print("Baking has finished...")
+        print(f"Total number of items baked: {self.itemsBaked}")

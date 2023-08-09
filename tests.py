@@ -1,17 +1,16 @@
 from bakery import Bakery
 
 
-def testBakery():
+def testBaking():
     bakery = Bakery()
 
-    # This will call the baking method and it will print out "Baking has started..."
+    # Call the method to start the baking process and expect to see "Baking has started..."
     bakery.startBaking()
 
-    # This will increment the the baking item counter
-    bakery.bakedItems()
+    # Call the method to increment the baking items and expect to see "Baking items"
+    bakery.bakeItems()
 
-    # This will call the end baking method and it will print out "Baking has end..."
+    # Call the method to end the baking process and expect to see "Baking has finished..."
     bakery.endBaking()
 
-    #
-    assert bakery.bakedItems() == 1
+    assert bakery.itemsBaked() == 1
